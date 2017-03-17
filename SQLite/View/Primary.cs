@@ -248,7 +248,7 @@ namespace SQLite.View
             int codigo = int.Parse(textBoxCodAtualiza.Text);
             textBoxCodAtualiza.Text = null;
 
-            Pessoa pessoa = new Pessoa(textBoxAtualizaNome.Text, textBoxAtualizaSobrenome.Text, dateTimePickerCadastro.Value.Date.ToShortDateString(), radioChekedAtualiza());
+            Pessoa pessoa = new Pessoa(textBoxAtualizaNome.Text, textBoxAtualizaSobrenome.Text, dateTimePickerAtualiza.Value.Date.ToShortDateString(), radioChekedAtualiza());
             sqlite.sqliteUpdate(codigo, pessoa);
 
             toolStripStatusLabel1.Text = "Atualizado com sucesso...";
