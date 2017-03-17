@@ -62,7 +62,7 @@ namespace SQLite.View
             string data = dateTimePickerCadastro.Value.Date.ToShortDateString();
             string sexo = radioChekedCadastro();
 
-            if (nome != String.Empty || sobrenome != String.Empty)
+            if (!nome.Equals(null) && !sobrenome.Equals(null) || !nome.Equals("") && !sobrenome.Equals(""))
             {
                 Pessoa pessoa = new Pessoa(nome, sobrenome, data, sexo);
                 sqlite.sqliteInsert(pessoa);
