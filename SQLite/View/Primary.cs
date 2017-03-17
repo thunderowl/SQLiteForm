@@ -165,7 +165,7 @@ namespace SQLite.View
 
         private void buttonEnviarConsulta_Click(object sender, EventArgs e)
         {
-            if (!textBoxCodConsulta.Equals(""))
+            if (!textBoxCodConsulta.Text.Equals(""))
             {
                 int codigo = int.Parse(textBoxCodConsulta.Text);
 
@@ -252,6 +252,24 @@ namespace SQLite.View
             sqlite.sqliteUpdate(codigo, pessoa);
 
             toolStripStatusLabel1.Text = "Atualizado com sucesso...";
+        }
+
+        private void textBoxCodConsulta_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonEnviarConsulta.PerformClick();
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void textBoxCodAtualiza_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonEnviaAtualizar.PerformClick();
+                e.SuppressKeyPress = true;
+            }
         }
     }
 }

@@ -134,7 +134,7 @@
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
@@ -689,6 +689,7 @@
             this.textBoxCodAtualiza.Name = "textBoxCodAtualiza";
             this.textBoxCodAtualiza.Size = new System.Drawing.Size(100, 20);
             this.textBoxCodAtualiza.TabIndex = 2;
+            this.textBoxCodAtualiza.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxCodAtualiza_KeyDown);
             // 
             // labelCodAtualiza
             // 
@@ -759,6 +760,7 @@
             this.textBoxCodConsulta.Name = "textBoxCodConsulta";
             this.textBoxCodConsulta.Size = new System.Drawing.Size(100, 20);
             this.textBoxCodConsulta.TabIndex = 2;
+            this.textBoxCodConsulta.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxCodConsulta_KeyDown);
             // 
             // labelCodConsulta
             // 
