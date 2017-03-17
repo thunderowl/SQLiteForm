@@ -170,7 +170,7 @@ namespace SQLite.Database
             }          
         }
 
-        public bool sqliteVerificaDeletar(int valorBox)
+        public bool sqliteVerificaCod(int valorBox)
         {
             bool validaCampo = false;
             using (SQLiteConnection con = new SQLiteConnection(DB_URL))
@@ -210,5 +210,102 @@ namespace SQLite.Database
             return validaCampo;
         }
 
+        public void sqliteFind(int cod, RichTextBox rich)
+        {
+            using (SQLiteConnection con = new SQLiteConnection(DB_URL))
+            {
+                try
+                {
+                    con.Open();
+
+                    string sql = "SELECT * FROM PESSOA WHERE CODIGO = " + cod + ";";
+
+                    using (SQLiteCommand command = new SQLiteCommand(sql, con))
+                    {
+                        using (SQLiteDataReader dataReader = command.ExecuteReader())
+                        {
+                            rich.Text = "";
+                            while (dataReader.Read())
+                            {
+                                rich.Text += "Código: " + dataReader["CODIGO"] + "\n";
+                                rich.Text += "Nome: " + dataReader["NOME"] + " ";
+                                rich.Text += dataReader["SOBRENOME"] + "\n";
+                                rich.Text += "Nascimento: " + dataReader["DATA_NASCIMENTO"].ToString().Substring(0, 10) + "\n";
+                                rich.Text += "Sexo: " + dataReader["SEXO"] + "\n \n";
+
+                            }
+                            dataReader.Close();
+                        }
+
+                    }
+
+                    con.Close();
+
+                }
+                catch (SQLiteException e)
+                {
+                    MessageBox.Show(e.Message);
+                }
+            }
+        }
+
+        public void sqliteMostraAtualiza(int codigo, TextBox a, TextBox b, DateTimePicker d, ref string sexo)
+        {
+            using (SQLiteConnection con = new SQLiteConnection(DB_URL))
+            {
+                try
+                {
+                    con.Open();
+
+                    string sql = "SELECT * FROM PESSOA WHERE CODIGO = " + codigo + ";";
+
+                    using (SQLiteCommand command = new SQLiteCommand(sql, con))
+                    {
+                        using (SQLiteDataReader dataReader = command.ExecuteReader())
+                        {
+                            while (dataReader.Read())
+                            {
+                                a.Text = dataReader["NOME"].ToString();
+                                b.Text = dataReader["SOBRENOME"].ToString();
+                                d.Value = DateTime.Parse(dataReader["DATA_NASCIMENTO"].ToString().Substring(0, 10));
+                                sexo = dataReader["SEXO"].ToString();
+
+                            }
+                            dataReader.Close();
+                        }
+
+                    }
+
+                    con.Close();
+
+                }
+                catch (SQLiteException e)
+                {
+                    MessageBox.Show(e.Message);
+                }
+            }
+        }
+
+        public void sqliteUpdate(int codigo, Pessoa pessoa)
+        {
+            using (SQLiteConnection con = new SQLiteConnection(DB_URL))
+            {
+                try
+                {
+                    con.Open();
+
+                    string sql = "UPDATE PESSOA SET NOME = '" + pessoa.Nome + "', SOBRENOME = '" + pessoa.Sobrenome + "', DATA_NASCIMENTO = '" + pessoa.DataNascimento + "', SEXO = '" + pessoa.Sexo + "';";
+
+                    using (SQLiteCommand command = new SQLiteCommand(sql, con))
+                        command.ExecuteNonQuery();
+
+                    con.Close();
+                }
+                catch (SQLiteException e)
+                {
+                    MessageBox.Show(e.Message);
+                }
+            }
+        }
     }
 }

@@ -12,6 +12,6 @@ namespace SQLite.Database
         void sqliteInsert(Pessoa pessoa);
         void sqliteSelect(RichTextBox rich);
         void sqliteDelete(int codigo);
-        bool sqliteVerificaDeletar(int valorBox);
+        bool sqliteVerificaCod(int valorBox);
     }
 }

@@ -27,6 +27,8 @@ namespace SQLite.View
             panelListaPessoas.Visible = false;
             panelAtualiza.Visible = false;
             panelConsulta.Visible = false;
+            panelMostraConsulta.Visible = false;
+            panelVerdadeAtualiza.Visible = false;
             panelCadastrar.Visible = true;
         }
 
@@ -46,6 +48,8 @@ namespace SQLite.View
             panelCadastrar.Visible = false;
             panelAtualiza.Visible = false;
             panelConsulta.Visible = false;
+            panelMostraConsulta.Visible = false;
+            panelVerdadeAtualiza.Visible = false;
             panelListaPessoas.Visible = true;
             sqlite.sqliteSelect(richTextBoxListaPessoa);
             toolStripStatusLabel1.Text = "Listagem concluída...";
@@ -56,7 +60,7 @@ namespace SQLite.View
             string nome = textBoxNomeCadastro.Text;
             string sobrenome = textBoxSobrenomeCadastro.Text;           
             string data = dateTimePickerCadastro.Value.Date.ToShortDateString();
-            string sexo = radioCheked();
+            string sexo = radioChekedCadastro();
 
             if (nome != String.Empty || sobrenome != String.Empty)
             {
@@ -70,7 +74,7 @@ namespace SQLite.View
             }           
         }
 
-        private string radioCheked()
+        private string radioChekedCadastro()
         {
             string ch = null;
 
@@ -104,22 +108,33 @@ namespace SQLite.View
             panelListaPessoas.Visible = false;
             panelAtualiza.Visible = false;
             panelConsulta.Visible = false;
+            panelMostraConsulta.Visible = false;
+            panelVerdadeAtualiza.Visible = false;
             panelDeletarPessoa.Visible = true;
         }
 
         private void buttonEnviaDeletar_Click(object sender, EventArgs e)
-        {            
-            int codigo = int.Parse(textBoxDeletarCodigo.Text);
-
-            if (sqlite.sqliteVerificaDeletar(codigo))
+        {
+            if (!textBoxDeletarCodigo.Text.Equals(""))
             {
-                sqlite.sqliteDelete(codigo);               
-                toolStripStatusLabel1.Text = "Deletado com sucesso.";
+                int codigo = int.Parse(textBoxDeletarCodigo.Text);
+
+                if (sqlite.sqliteVerificaCod(codigo))
+                {
+                    sqlite.sqliteDelete(codigo);
+                    textBoxDeletarCodigo.Text = null;
+                    toolStripStatusLabel1.Text = "Deletado com sucesso.";
+                }
+                else
+                {
+                    toolStripStatusLabel1.Text = "Código inválido.";
+                }
             }
             else
             {
-                toolStripStatusLabel1.Text = "Código inválido.";
+                toolStripStatusLabel1.Text = "Verifique os campos, nenhum pode ter valor nulo.";
             }
+            
         }
 
         private void buttonMenuAtualizar_Click(object sender, EventArgs e)
@@ -130,6 +145,8 @@ namespace SQLite.View
             panelDeletarPessoa.Visible = false;
             panelListaPessoas.Visible = false;
             panelConsulta.Visible = false;
+            panelMostraConsulta.Visible = false;
+            panelVerdadeAtualiza.Visible = false;
             panelAtualiza.Visible = true;
         }
 
@@ -141,7 +158,100 @@ namespace SQLite.View
             panelListaPessoas.Visible = false;
             panelDeletarPessoa.Visible = false;
             panelAtualiza.Visible = false;
+            panelMostraConsulta.Visible = false;
+            panelVerdadeAtualiza.Visible = true;
             panelConsulta.Visible = true;
+        }
+
+        private void buttonEnviarConsulta_Click(object sender, EventArgs e)
+        {
+            if (!textBoxCodConsulta.Equals(""))
+            {
+                int codigo = int.Parse(textBoxCodConsulta.Text);
+
+                if (sqlite.sqliteVerificaCod(codigo))
+                {
+                    panelMostraConsulta.Visible = true;
+                    sqlite.sqliteFind(codigo, richTextBoxMostraConsulta);
+                    textBoxCodConsulta.Text = null;
+                    toolStripStatusLabel1.Text = "Consulta feita com sucesso.";
+                }
+                else
+                {
+                    toolStripStatusLabel1.Text = "Código inválido.";
+                }
+            }
+            else
+            {
+                toolStripStatusLabel1.Text = "Verifique os campos, nenhum pode ter valor nulo.";
+            }
+            
+        }
+
+        private void buttonEnviaAtualizar_Click(object sender, EventArgs e)
+        {
+            if(!textBoxCodAtualiza.Equals(""))
+            {
+                int codigo = int.Parse(textBoxCodAtualiza.Text);
+
+                if (sqlite.sqliteVerificaCod(codigo))
+                {
+                    toolStripStatusLabel1.Text = "Informe os campos para atualizar.";
+                    panelVerdadeAtualiza.Visible = true;
+                    string sexo = null;
+
+                    sqlite.sqliteMostraAtualiza(codigo, textBoxAtualizaNome, textBoxAtualizaSobrenome, dateTimePickerAtualiza, ref sexo);
+
+                    if (sexo[0].Equals('M'))
+                        radioButtonAtualizaSexoM.Checked = true;
+                    else if (sexo[0].Equals('F'))
+                        radioButtonAtualizaSexoF.Checked = true;
+                    else if (sexo[0].Equals('N'))
+                        radioButtonAtualizaSexoN.Checked = true;
+                }
+                else
+                {
+                    toolStripStatusLabel1.Text = "Código inválido.";
+                }
+            }
+            
+        }
+
+        private string radioChekedAtualiza()
+        {
+            string ch = null;
+
+            if (radioButtonAtualizaSexoM.Checked)
+            {
+                ch = radioButtonAtualizaSexoM.Text;
+            }
+            else if (radioButtonAtualizaSexoF.Checked)
+            {
+                ch = radioButtonAtualizaSexoF.Text;
+            }
+            else if (radioButtonAtualizaSexoN.Checked)
+            {
+                ch = radioButtonAtualizaSexoN.Text;
+            }
+
+            return ch;
+        }
+
+        private void buttonAtualizaCancela_Click(object sender, EventArgs e)
+        {
+            textBoxCodAtualiza.Text = null;
+            panelVerdadeAtualiza.Visible = false;
+        }
+
+        private void buttonEnviaAtualiza2_Click(object sender, EventArgs e)
+        {
+            int codigo = int.Parse(textBoxCodAtualiza.Text);
+            textBoxCodAtualiza.Text = null;
+
+            Pessoa pessoa = new Pessoa(textBoxAtualizaNome.Text, textBoxAtualizaSobrenome.Text, dateTimePickerCadastro.Value.Date.ToShortDateString(), radioChekedAtualiza());
+            sqlite.sqliteUpdate(codigo, pessoa);
+
+            toolStripStatusLabel1.Text = "Atualizado com sucesso...";
         }
     }
 }
