@@ -73,30 +73,30 @@
             this.labelCodDeletar = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panelAtualiza = new System.Windows.Forms.Panel();
+            this.panelVerdadeAtualiza = new System.Windows.Forms.Panel();
+            this.buttonAtualizaCancela = new System.Windows.Forms.Button();
+            this.buttonEnviaAtualiza2 = new System.Windows.Forms.Button();
+            this.labelAtualizaSexo = new System.Windows.Forms.Label();
+            this.radioButtonAtualizaSexoN = new System.Windows.Forms.RadioButton();
+            this.radioButtonAtualizaSexoF = new System.Windows.Forms.RadioButton();
+            this.radioButtonAtualizaSexoM = new System.Windows.Forms.RadioButton();
+            this.textBoxAtualizaNome = new System.Windows.Forms.TextBox();
+            this.textBoxAtualizaSobrenome = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dateTimePickerAtualiza = new System.Windows.Forms.DateTimePicker();
+            this.labelSobrenomeAtualiza = new System.Windows.Forms.Label();
+            this.labelNomeAtualiza = new System.Windows.Forms.Label();
             this.buttonEnviaAtualizar = new System.Windows.Forms.Button();
             this.textBoxCodAtualiza = new System.Windows.Forms.TextBox();
             this.labelCodAtualiza = new System.Windows.Forms.Label();
             this.labelAtualiza = new System.Windows.Forms.Label();
             this.panelConsulta = new System.Windows.Forms.Panel();
-            this.labelConsultaPessoa = new System.Windows.Forms.Label();
-            this.labelCodConsulta = new System.Windows.Forms.Label();
-            this.textBoxCodConsulta = new System.Windows.Forms.TextBox();
-            this.buttonEnviarConsulta = new System.Windows.Forms.Button();
             this.panelMostraConsulta = new System.Windows.Forms.Panel();
             this.richTextBoxMostraConsulta = new System.Windows.Forms.RichTextBox();
-            this.panelVerdadeAtualiza = new System.Windows.Forms.Panel();
-            this.labelNomeAtualiza = new System.Windows.Forms.Label();
-            this.labelSobrenomeAtualiza = new System.Windows.Forms.Label();
-            this.dateTimePickerAtualiza = new System.Windows.Forms.DateTimePicker();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBoxAtualizaSobrenome = new System.Windows.Forms.TextBox();
-            this.textBoxAtualizaNome = new System.Windows.Forms.TextBox();
-            this.radioButtonAtualizaSexoM = new System.Windows.Forms.RadioButton();
-            this.radioButtonAtualizaSexoF = new System.Windows.Forms.RadioButton();
-            this.radioButtonAtualizaSexoN = new System.Windows.Forms.RadioButton();
-            this.labelAtualizaSexo = new System.Windows.Forms.Label();
-            this.buttonEnviaAtualiza2 = new System.Windows.Forms.Button();
-            this.buttonAtualizaCancela = new System.Windows.Forms.Button();
+            this.buttonEnviarConsulta = new System.Windows.Forms.Button();
+            this.textBoxCodConsulta = new System.Windows.Forms.TextBox();
+            this.labelCodConsulta = new System.Windows.Forms.Label();
+            this.labelConsultaPessoa = new System.Windows.Forms.Label();
             this.menuStripBarraMenu.SuspendLayout();
             this.panelCadastrar.SuspendLayout();
             this.panelMenuGeral.SuspendLayout();
@@ -105,9 +105,9 @@
             this.statusStripBarraStatus.SuspendLayout();
             this.panelDeletarPessoa.SuspendLayout();
             this.panelAtualiza.SuspendLayout();
+            this.panelVerdadeAtualiza.SuspendLayout();
             this.panelConsulta.SuspendLayout();
             this.panelMostraConsulta.SuspendLayout();
-            this.panelVerdadeAtualiza.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStripBarraMenu
@@ -134,7 +134,7 @@
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
@@ -193,7 +193,7 @@
             this.dateTimePickerCadastro.MinDate = new System.DateTime(1920, 1, 1, 0, 0, 0, 0);
             this.dateTimePickerCadastro.Name = "dateTimePickerCadastro";
             this.dateTimePickerCadastro.Size = new System.Drawing.Size(102, 20);
-            this.dateTimePickerCadastro.TabIndex = 10;
+            this.dateTimePickerCadastro.TabIndex = 5;
             this.dateTimePickerCadastro.Value = new System.DateTime(2017, 3, 11, 0, 0, 0, 0);
             // 
             // buttonLimpaCadastro
@@ -201,7 +201,7 @@
             this.buttonLimpaCadastro.Location = new System.Drawing.Point(292, 233);
             this.buttonLimpaCadastro.Name = "buttonLimpaCadastro";
             this.buttonLimpaCadastro.Size = new System.Drawing.Size(75, 23);
-            this.buttonLimpaCadastro.TabIndex = 2;
+            this.buttonLimpaCadastro.TabIndex = 7;
             this.buttonLimpaCadastro.Text = "Limpar";
             this.buttonLimpaCadastro.UseVisualStyleBackColor = true;
             this.buttonLimpaCadastro.Click += new System.EventHandler(this.buttonLimpaCadastro_Click);
@@ -220,7 +220,7 @@
             this.buttonEnviaCadastro.Location = new System.Drawing.Point(211, 233);
             this.buttonEnviaCadastro.Name = "buttonEnviaCadastro";
             this.buttonEnviaCadastro.Size = new System.Drawing.Size(75, 23);
-            this.buttonEnviaCadastro.TabIndex = 1;
+            this.buttonEnviaCadastro.TabIndex = 6;
             this.buttonEnviaCadastro.Text = "Enviar";
             this.buttonEnviaCadastro.UseVisualStyleBackColor = true;
             this.buttonEnviaCadastro.Click += new System.EventHandler(this.buttonEnviaCadastro_Click);
@@ -231,7 +231,7 @@
             this.radioButtonSexoN.Location = new System.Drawing.Point(237, 140);
             this.radioButtonSexoN.Name = "radioButtonSexoN";
             this.radioButtonSexoN.Size = new System.Drawing.Size(108, 17);
-            this.radioButtonSexoN.TabIndex = 8;
+            this.radioButtonSexoN.TabIndex = 4;
             this.radioButtonSexoN.Text = "Não especificado";
             this.radioButtonSexoN.UseVisualStyleBackColor = true;
             // 
@@ -241,7 +241,7 @@
             this.radioButtonSexoF.Location = new System.Drawing.Point(163, 140);
             this.radioButtonSexoF.Name = "radioButtonSexoF";
             this.radioButtonSexoF.Size = new System.Drawing.Size(67, 17);
-            this.radioButtonSexoF.TabIndex = 7;
+            this.radioButtonSexoF.TabIndex = 3;
             this.radioButtonSexoF.Text = "Feminino";
             this.radioButtonSexoF.UseVisualStyleBackColor = true;
             // 
@@ -261,7 +261,7 @@
             this.radioButtonSexoM.Location = new System.Drawing.Point(83, 140);
             this.radioButtonSexoM.Name = "radioButtonSexoM";
             this.radioButtonSexoM.Size = new System.Drawing.Size(73, 17);
-            this.radioButtonSexoM.TabIndex = 6;
+            this.radioButtonSexoM.TabIndex = 2;
             this.radioButtonSexoM.TabStop = true;
             this.radioButtonSexoM.Text = "Masculino";
             this.radioButtonSexoM.UseVisualStyleBackColor = true;
@@ -272,7 +272,7 @@
             this.textBoxNomeCadastro.MaxLength = 50;
             this.textBoxNomeCadastro.Name = "textBoxNomeCadastro";
             this.textBoxNomeCadastro.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNomeCadastro.TabIndex = 2;
+            this.textBoxNomeCadastro.TabIndex = 0;
             // 
             // label3
             // 
@@ -298,7 +298,7 @@
             this.textBoxSobrenomeCadastro.MaxLength = 50;
             this.textBoxSobrenomeCadastro.Name = "textBoxSobrenomeCadastro";
             this.textBoxSobrenomeCadastro.Size = new System.Drawing.Size(100, 20);
-            this.textBoxSobrenomeCadastro.TabIndex = 4;
+            this.textBoxSobrenomeCadastro.TabIndex = 1;
             // 
             // panelMenuGeral
             // 
@@ -542,6 +542,137 @@
             this.panelAtualiza.TabIndex = 14;
             this.panelAtualiza.Visible = false;
             // 
+            // panelVerdadeAtualiza
+            // 
+            this.panelVerdadeAtualiza.Controls.Add(this.buttonAtualizaCancela);
+            this.panelVerdadeAtualiza.Controls.Add(this.buttonEnviaAtualiza2);
+            this.panelVerdadeAtualiza.Controls.Add(this.labelAtualizaSexo);
+            this.panelVerdadeAtualiza.Controls.Add(this.radioButtonAtualizaSexoN);
+            this.panelVerdadeAtualiza.Controls.Add(this.radioButtonAtualizaSexoF);
+            this.panelVerdadeAtualiza.Controls.Add(this.radioButtonAtualizaSexoM);
+            this.panelVerdadeAtualiza.Controls.Add(this.textBoxAtualizaNome);
+            this.panelVerdadeAtualiza.Controls.Add(this.textBoxAtualizaSobrenome);
+            this.panelVerdadeAtualiza.Controls.Add(this.label10);
+            this.panelVerdadeAtualiza.Controls.Add(this.dateTimePickerAtualiza);
+            this.panelVerdadeAtualiza.Controls.Add(this.labelSobrenomeAtualiza);
+            this.panelVerdadeAtualiza.Controls.Add(this.labelNomeAtualiza);
+            this.panelVerdadeAtualiza.Location = new System.Drawing.Point(12, 78);
+            this.panelVerdadeAtualiza.Name = "panelVerdadeAtualiza";
+            this.panelVerdadeAtualiza.Size = new System.Drawing.Size(366, 178);
+            this.panelVerdadeAtualiza.TabIndex = 4;
+            this.panelVerdadeAtualiza.Visible = false;
+            // 
+            // buttonAtualizaCancela
+            // 
+            this.buttonAtualizaCancela.Location = new System.Drawing.Point(287, 143);
+            this.buttonAtualizaCancela.Name = "buttonAtualizaCancela";
+            this.buttonAtualizaCancela.Size = new System.Drawing.Size(75, 23);
+            this.buttonAtualizaCancela.TabIndex = 7;
+            this.buttonAtualizaCancela.Text = "Cancelar";
+            this.buttonAtualizaCancela.UseVisualStyleBackColor = true;
+            this.buttonAtualizaCancela.Click += new System.EventHandler(this.buttonAtualizaCancela_Click);
+            // 
+            // buttonEnviaAtualiza2
+            // 
+            this.buttonEnviaAtualiza2.Location = new System.Drawing.Point(206, 143);
+            this.buttonEnviaAtualiza2.Name = "buttonEnviaAtualiza2";
+            this.buttonEnviaAtualiza2.Size = new System.Drawing.Size(75, 23);
+            this.buttonEnviaAtualiza2.TabIndex = 6;
+            this.buttonEnviaAtualiza2.Text = "Enviar";
+            this.buttonEnviaAtualiza2.UseVisualStyleBackColor = true;
+            this.buttonEnviaAtualiza2.Click += new System.EventHandler(this.buttonEnviaAtualiza2_Click);
+            // 
+            // labelAtualizaSexo
+            // 
+            this.labelAtualizaSexo.AutoSize = true;
+            this.labelAtualizaSexo.Location = new System.Drawing.Point(18, 66);
+            this.labelAtualizaSexo.Name = "labelAtualizaSexo";
+            this.labelAtualizaSexo.Size = new System.Drawing.Size(34, 13);
+            this.labelAtualizaSexo.TabIndex = 9;
+            this.labelAtualizaSexo.Text = "Sexo:";
+            // 
+            // radioButtonAtualizaSexoN
+            // 
+            this.radioButtonAtualizaSexoN.AutoSize = true;
+            this.radioButtonAtualizaSexoN.Location = new System.Drawing.Point(206, 65);
+            this.radioButtonAtualizaSexoN.Name = "radioButtonAtualizaSexoN";
+            this.radioButtonAtualizaSexoN.Size = new System.Drawing.Size(109, 17);
+            this.radioButtonAtualizaSexoN.TabIndex = 4;
+            this.radioButtonAtualizaSexoN.TabStop = true;
+            this.radioButtonAtualizaSexoN.Text = "Não Especificado";
+            this.radioButtonAtualizaSexoN.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonAtualizaSexoF
+            // 
+            this.radioButtonAtualizaSexoF.AutoSize = true;
+            this.radioButtonAtualizaSexoF.Location = new System.Drawing.Point(139, 65);
+            this.radioButtonAtualizaSexoF.Name = "radioButtonAtualizaSexoF";
+            this.radioButtonAtualizaSexoF.Size = new System.Drawing.Size(67, 17);
+            this.radioButtonAtualizaSexoF.TabIndex = 3;
+            this.radioButtonAtualizaSexoF.TabStop = true;
+            this.radioButtonAtualizaSexoF.Text = "Feminino";
+            this.radioButtonAtualizaSexoF.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonAtualizaSexoM
+            // 
+            this.radioButtonAtualizaSexoM.AutoSize = true;
+            this.radioButtonAtualizaSexoM.Location = new System.Drawing.Point(64, 65);
+            this.radioButtonAtualizaSexoM.Name = "radioButtonAtualizaSexoM";
+            this.radioButtonAtualizaSexoM.Size = new System.Drawing.Size(73, 17);
+            this.radioButtonAtualizaSexoM.TabIndex = 2;
+            this.radioButtonAtualizaSexoM.TabStop = true;
+            this.radioButtonAtualizaSexoM.Text = "Masculino";
+            this.radioButtonAtualizaSexoM.UseVisualStyleBackColor = true;
+            // 
+            // textBoxAtualizaNome
+            // 
+            this.textBoxAtualizaNome.Location = new System.Drawing.Point(57, 20);
+            this.textBoxAtualizaNome.Name = "textBoxAtualizaNome";
+            this.textBoxAtualizaNome.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAtualizaNome.TabIndex = 0;
+            // 
+            // textBoxAtualizaSobrenome
+            // 
+            this.textBoxAtualizaSobrenome.Location = new System.Drawing.Point(245, 20);
+            this.textBoxAtualizaSobrenome.Name = "textBoxAtualizaSobrenome";
+            this.textBoxAtualizaSobrenome.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAtualizaSobrenome.TabIndex = 1;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(14, 98);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(107, 13);
+            this.label10.TabIndex = 3;
+            this.label10.Text = "Data de Nascimento:";
+            // 
+            // dateTimePickerAtualiza
+            // 
+            this.dateTimePickerAtualiza.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerAtualiza.Location = new System.Drawing.Point(127, 94);
+            this.dateTimePickerAtualiza.Name = "dateTimePickerAtualiza";
+            this.dateTimePickerAtualiza.Size = new System.Drawing.Size(95, 20);
+            this.dateTimePickerAtualiza.TabIndex = 5;
+            // 
+            // labelSobrenomeAtualiza
+            // 
+            this.labelSobrenomeAtualiza.AutoSize = true;
+            this.labelSobrenomeAtualiza.Location = new System.Drawing.Point(176, 23);
+            this.labelSobrenomeAtualiza.Name = "labelSobrenomeAtualiza";
+            this.labelSobrenomeAtualiza.Size = new System.Drawing.Size(64, 13);
+            this.labelSobrenomeAtualiza.TabIndex = 1;
+            this.labelSobrenomeAtualiza.Text = "Sobrenome:";
+            // 
+            // labelNomeAtualiza
+            // 
+            this.labelNomeAtualiza.AutoSize = true;
+            this.labelNomeAtualiza.Location = new System.Drawing.Point(14, 24);
+            this.labelNomeAtualiza.Name = "labelNomeAtualiza";
+            this.labelNomeAtualiza.Size = new System.Drawing.Size(38, 13);
+            this.labelNomeAtualiza.TabIndex = 0;
+            this.labelNomeAtualiza.Text = "Nome:";
+            // 
             // buttonEnviaAtualizar
             // 
             this.buttonEnviaAtualizar.Location = new System.Drawing.Point(293, 234);
@@ -589,44 +720,8 @@
             this.panelConsulta.Location = new System.Drawing.Point(141, 40);
             this.panelConsulta.Name = "panelConsulta";
             this.panelConsulta.Size = new System.Drawing.Size(389, 267);
-            this.panelConsulta.TabIndex = 15;
+            this.panelConsulta.TabIndex = 0;
             this.panelConsulta.Visible = false;
-            // 
-            // labelConsultaPessoa
-            // 
-            this.labelConsultaPessoa.AutoSize = true;
-            this.labelConsultaPessoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelConsultaPessoa.Location = new System.Drawing.Point(54, 1);
-            this.labelConsultaPessoa.Name = "labelConsultaPessoa";
-            this.labelConsultaPessoa.Size = new System.Drawing.Size(291, 39);
-            this.labelConsultaPessoa.TabIndex = 0;
-            this.labelConsultaPessoa.Text = "Consultar Pessoa";
-            // 
-            // labelCodConsulta
-            // 
-            this.labelCodConsulta.AutoSize = true;
-            this.labelCodConsulta.Location = new System.Drawing.Point(73, 112);
-            this.labelCodConsulta.Name = "labelCodConsulta";
-            this.labelCodConsulta.Size = new System.Drawing.Size(89, 13);
-            this.labelCodConsulta.TabIndex = 1;
-            this.labelCodConsulta.Text = "Informe o código:";
-            // 
-            // textBoxCodConsulta
-            // 
-            this.textBoxCodConsulta.Location = new System.Drawing.Point(169, 110);
-            this.textBoxCodConsulta.Name = "textBoxCodConsulta";
-            this.textBoxCodConsulta.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCodConsulta.TabIndex = 2;
-            // 
-            // buttonEnviarConsulta
-            // 
-            this.buttonEnviarConsulta.Location = new System.Drawing.Point(293, 234);
-            this.buttonEnviarConsulta.Name = "buttonEnviarConsulta";
-            this.buttonEnviarConsulta.Size = new System.Drawing.Size(75, 23);
-            this.buttonEnviarConsulta.TabIndex = 3;
-            this.buttonEnviarConsulta.Text = "Enviar";
-            this.buttonEnviarConsulta.UseVisualStyleBackColor = true;
-            this.buttonEnviarConsulta.Click += new System.EventHandler(this.buttonEnviarConsulta_Click);
             // 
             // panelMostraConsulta
             // 
@@ -648,136 +743,41 @@
             this.richTextBoxMostraConsulta.TabIndex = 0;
             this.richTextBoxMostraConsulta.Text = "";
             // 
-            // panelVerdadeAtualiza
+            // buttonEnviarConsulta
             // 
-            this.panelVerdadeAtualiza.Controls.Add(this.buttonAtualizaCancela);
-            this.panelVerdadeAtualiza.Controls.Add(this.buttonEnviaAtualiza2);
-            this.panelVerdadeAtualiza.Controls.Add(this.labelAtualizaSexo);
-            this.panelVerdadeAtualiza.Controls.Add(this.radioButtonAtualizaSexoN);
-            this.panelVerdadeAtualiza.Controls.Add(this.radioButtonAtualizaSexoF);
-            this.panelVerdadeAtualiza.Controls.Add(this.radioButtonAtualizaSexoM);
-            this.panelVerdadeAtualiza.Controls.Add(this.textBoxAtualizaNome);
-            this.panelVerdadeAtualiza.Controls.Add(this.textBoxAtualizaSobrenome);
-            this.panelVerdadeAtualiza.Controls.Add(this.label10);
-            this.panelVerdadeAtualiza.Controls.Add(this.dateTimePickerAtualiza);
-            this.panelVerdadeAtualiza.Controls.Add(this.labelSobrenomeAtualiza);
-            this.panelVerdadeAtualiza.Controls.Add(this.labelNomeAtualiza);
-            this.panelVerdadeAtualiza.Location = new System.Drawing.Point(12, 78);
-            this.panelVerdadeAtualiza.Name = "panelVerdadeAtualiza";
-            this.panelVerdadeAtualiza.Size = new System.Drawing.Size(366, 178);
-            this.panelVerdadeAtualiza.TabIndex = 4;
-            this.panelVerdadeAtualiza.Visible = false;
+            this.buttonEnviarConsulta.Location = new System.Drawing.Point(293, 234);
+            this.buttonEnviarConsulta.Name = "buttonEnviarConsulta";
+            this.buttonEnviarConsulta.Size = new System.Drawing.Size(75, 23);
+            this.buttonEnviarConsulta.TabIndex = 3;
+            this.buttonEnviarConsulta.Text = "Enviar";
+            this.buttonEnviarConsulta.UseVisualStyleBackColor = true;
+            this.buttonEnviarConsulta.Click += new System.EventHandler(this.buttonEnviarConsulta_Click);
             // 
-            // labelNomeAtualiza
+            // textBoxCodConsulta
             // 
-            this.labelNomeAtualiza.AutoSize = true;
-            this.labelNomeAtualiza.Location = new System.Drawing.Point(14, 24);
-            this.labelNomeAtualiza.Name = "labelNomeAtualiza";
-            this.labelNomeAtualiza.Size = new System.Drawing.Size(38, 13);
-            this.labelNomeAtualiza.TabIndex = 0;
-            this.labelNomeAtualiza.Text = "Nome:";
+            this.textBoxCodConsulta.Location = new System.Drawing.Point(169, 110);
+            this.textBoxCodConsulta.Name = "textBoxCodConsulta";
+            this.textBoxCodConsulta.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCodConsulta.TabIndex = 2;
             // 
-            // labelSobrenomeAtualiza
+            // labelCodConsulta
             // 
-            this.labelSobrenomeAtualiza.AutoSize = true;
-            this.labelSobrenomeAtualiza.Location = new System.Drawing.Point(176, 23);
-            this.labelSobrenomeAtualiza.Name = "labelSobrenomeAtualiza";
-            this.labelSobrenomeAtualiza.Size = new System.Drawing.Size(64, 13);
-            this.labelSobrenomeAtualiza.TabIndex = 1;
-            this.labelSobrenomeAtualiza.Text = "Sobrenome:";
+            this.labelCodConsulta.AutoSize = true;
+            this.labelCodConsulta.Location = new System.Drawing.Point(73, 112);
+            this.labelCodConsulta.Name = "labelCodConsulta";
+            this.labelCodConsulta.Size = new System.Drawing.Size(89, 13);
+            this.labelCodConsulta.TabIndex = 1;
+            this.labelCodConsulta.Text = "Informe o código:";
             // 
-            // dateTimePickerAtualiza
+            // labelConsultaPessoa
             // 
-            this.dateTimePickerAtualiza.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerAtualiza.Location = new System.Drawing.Point(127, 94);
-            this.dateTimePickerAtualiza.Name = "dateTimePickerAtualiza";
-            this.dateTimePickerAtualiza.Size = new System.Drawing.Size(95, 20);
-            this.dateTimePickerAtualiza.TabIndex = 2;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(14, 98);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(107, 13);
-            this.label10.TabIndex = 3;
-            this.label10.Text = "Data de Nascimento:";
-            // 
-            // textBoxAtualizaSobrenome
-            // 
-            this.textBoxAtualizaSobrenome.Location = new System.Drawing.Point(245, 20);
-            this.textBoxAtualizaSobrenome.Name = "textBoxAtualizaSobrenome";
-            this.textBoxAtualizaSobrenome.Size = new System.Drawing.Size(100, 20);
-            this.textBoxAtualizaSobrenome.TabIndex = 4;
-            // 
-            // textBoxAtualizaNome
-            // 
-            this.textBoxAtualizaNome.Location = new System.Drawing.Point(57, 20);
-            this.textBoxAtualizaNome.Name = "textBoxAtualizaNome";
-            this.textBoxAtualizaNome.Size = new System.Drawing.Size(100, 20);
-            this.textBoxAtualizaNome.TabIndex = 5;
-            // 
-            // radioButtonAtualizaSexoM
-            // 
-            this.radioButtonAtualizaSexoM.AutoSize = true;
-            this.radioButtonAtualizaSexoM.Location = new System.Drawing.Point(64, 65);
-            this.radioButtonAtualizaSexoM.Name = "radioButtonAtualizaSexoM";
-            this.radioButtonAtualizaSexoM.Size = new System.Drawing.Size(73, 17);
-            this.radioButtonAtualizaSexoM.TabIndex = 6;
-            this.radioButtonAtualizaSexoM.TabStop = true;
-            this.radioButtonAtualizaSexoM.Text = "Masculino";
-            this.radioButtonAtualizaSexoM.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonAtualizaSexoF
-            // 
-            this.radioButtonAtualizaSexoF.AutoSize = true;
-            this.radioButtonAtualizaSexoF.Location = new System.Drawing.Point(139, 65);
-            this.radioButtonAtualizaSexoF.Name = "radioButtonAtualizaSexoF";
-            this.radioButtonAtualizaSexoF.Size = new System.Drawing.Size(67, 17);
-            this.radioButtonAtualizaSexoF.TabIndex = 7;
-            this.radioButtonAtualizaSexoF.TabStop = true;
-            this.radioButtonAtualizaSexoF.Text = "Feminino";
-            this.radioButtonAtualizaSexoF.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonAtualizaSexoN
-            // 
-            this.radioButtonAtualizaSexoN.AutoSize = true;
-            this.radioButtonAtualizaSexoN.Location = new System.Drawing.Point(206, 65);
-            this.radioButtonAtualizaSexoN.Name = "radioButtonAtualizaSexoN";
-            this.radioButtonAtualizaSexoN.Size = new System.Drawing.Size(109, 17);
-            this.radioButtonAtualizaSexoN.TabIndex = 8;
-            this.radioButtonAtualizaSexoN.TabStop = true;
-            this.radioButtonAtualizaSexoN.Text = "Não Especificado";
-            this.radioButtonAtualizaSexoN.UseVisualStyleBackColor = true;
-            // 
-            // labelAtualizaSexo
-            // 
-            this.labelAtualizaSexo.AutoSize = true;
-            this.labelAtualizaSexo.Location = new System.Drawing.Point(18, 66);
-            this.labelAtualizaSexo.Name = "labelAtualizaSexo";
-            this.labelAtualizaSexo.Size = new System.Drawing.Size(34, 13);
-            this.labelAtualizaSexo.TabIndex = 9;
-            this.labelAtualizaSexo.Text = "Sexo:";
-            // 
-            // buttonEnviaAtualiza2
-            // 
-            this.buttonEnviaAtualiza2.Location = new System.Drawing.Point(206, 143);
-            this.buttonEnviaAtualiza2.Name = "buttonEnviaAtualiza2";
-            this.buttonEnviaAtualiza2.Size = new System.Drawing.Size(75, 23);
-            this.buttonEnviaAtualiza2.TabIndex = 10;
-            this.buttonEnviaAtualiza2.Text = "Enviar";
-            this.buttonEnviaAtualiza2.UseVisualStyleBackColor = true;
-            this.buttonEnviaAtualiza2.Click += new System.EventHandler(this.buttonEnviaAtualiza2_Click);
-            // 
-            // buttonAtualizaCancela
-            // 
-            this.buttonAtualizaCancela.Location = new System.Drawing.Point(287, 143);
-            this.buttonAtualizaCancela.Name = "buttonAtualizaCancela";
-            this.buttonAtualizaCancela.Size = new System.Drawing.Size(75, 23);
-            this.buttonAtualizaCancela.TabIndex = 11;
-            this.buttonAtualizaCancela.Text = "Cancelar";
-            this.buttonAtualizaCancela.UseVisualStyleBackColor = true;
-            this.buttonAtualizaCancela.Click += new System.EventHandler(this.buttonAtualizaCancela_Click);
+            this.labelConsultaPessoa.AutoSize = true;
+            this.labelConsultaPessoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConsultaPessoa.Location = new System.Drawing.Point(54, 1);
+            this.labelConsultaPessoa.Name = "labelConsultaPessoa";
+            this.labelConsultaPessoa.Size = new System.Drawing.Size(291, 39);
+            this.labelConsultaPessoa.TabIndex = 0;
+            this.labelConsultaPessoa.Text = "Consultar Pessoa";
             // 
             // Primary
             // 
@@ -813,11 +813,11 @@
             this.panelDeletarPessoa.PerformLayout();
             this.panelAtualiza.ResumeLayout(false);
             this.panelAtualiza.PerformLayout();
+            this.panelVerdadeAtualiza.ResumeLayout(false);
+            this.panelVerdadeAtualiza.PerformLayout();
             this.panelConsulta.ResumeLayout(false);
             this.panelConsulta.PerformLayout();
             this.panelMostraConsulta.ResumeLayout(false);
-            this.panelVerdadeAtualiza.ResumeLayout(false);
-            this.panelVerdadeAtualiza.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
