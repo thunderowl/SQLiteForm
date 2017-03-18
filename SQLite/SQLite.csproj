@@ -49,7 +49,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>logo.ico</ApplicationIcon>
+    <ApplicationIcon>logoICO.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>SQLite.Program</StartupObject>
@@ -147,6 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
+    <Content Include="logoICO.ico" />
     <None Include="Resources\logoICO.ico" />
     <None Include="Resources\logo.png" />
   </ItemGroup>
