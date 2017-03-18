@@ -813,7 +813,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStripBarraMenu;
             this.Name = "Primary";
-            this.Text = "SQLite";
+            this.Text = "ElementX";
             this.menuStripBarraMenu.ResumeLayout(false);
             this.menuStripBarraMenu.PerformLayout();
             this.panelCadastrar.ResumeLayout(false);
