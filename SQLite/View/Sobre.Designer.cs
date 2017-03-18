@@ -32,9 +32,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,16 +68,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.ImageLocation = "Pictures\\logo.jpg";
-            this.pictureBoxLogo.Location = new System.Drawing.Point(12, 34);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(138, 143);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxLogo.TabIndex = 3;
-            this.pictureBoxLogo.TabStop = false;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -97,6 +87,17 @@
             this.label4.Size = new System.Drawing.Size(91, 15);
             this.label4.TabIndex = 5;
             this.label4.Text = "Jackson Cunha";
+            // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.Image = global::SQLite.Properties.Resources.logo;
+            this.pictureBoxLogo.ImageLocation = "";
+            this.pictureBoxLogo.Location = new System.Drawing.Point(12, 34);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(138, 143);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLogo.TabIndex = 3;
+            this.pictureBoxLogo.TabStop = false;
             // 
             // Sobre
             // 

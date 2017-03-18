@@ -393,11 +393,11 @@
             // 
             this.labelBemVindo.AutoSize = true;
             this.labelBemVindo.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBemVindo.Location = new System.Drawing.Point(88, 98);
+            this.labelBemVindo.Location = new System.Drawing.Point(84, 98);
             this.labelBemVindo.Name = "labelBemVindo";
-            this.labelBemVindo.Size = new System.Drawing.Size(235, 42);
+            this.labelBemVindo.Size = new System.Drawing.Size(246, 42);
             this.labelBemVindo.TabIndex = 0;
-            this.labelBemVindo.Text = "BEM VINDO";
+            this.labelBemVindo.Text = "BEM VINDO!";
             // 
             // panelListaPessoas
             // 
