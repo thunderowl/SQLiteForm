@@ -146,7 +146,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="logo.ico" />
     <Content Include="logoICO.ico" />
     <None Include="Resources\logoICO.ico" />
     <None Include="Resources\logo.png" />
