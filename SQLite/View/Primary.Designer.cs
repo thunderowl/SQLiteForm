@@ -35,30 +35,30 @@
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelCadastrar = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelCadastrar = new System.Windows.Forms.Label();
             this.dateTimePickerCadastro = new System.Windows.Forms.DateTimePicker();
             this.buttonLimpaCadastro = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelAtualizaNascimento = new System.Windows.Forms.Label();
             this.buttonEnviaCadastro = new System.Windows.Forms.Button();
             this.radioButtonSexoN = new System.Windows.Forms.RadioButton();
             this.radioButtonSexoF = new System.Windows.Forms.RadioButton();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelCadastraNome = new System.Windows.Forms.Label();
             this.radioButtonSexoM = new System.Windows.Forms.RadioButton();
             this.textBoxNomeCadastro = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelCadastraSexo = new System.Windows.Forms.Label();
+            this.labelCadastraSobrenome = new System.Windows.Forms.Label();
             this.textBoxSobrenomeCadastro = new System.Windows.Forms.TextBox();
             this.panelMenuGeral = new System.Windows.Forms.Panel();
             this.buttonMenuConsultar = new System.Windows.Forms.Button();
             this.buttonMenuAtualizar = new System.Windows.Forms.Button();
             this.buttonMenuDeletar = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
+            this.labelMenu = new System.Windows.Forms.Label();
             this.buttonMenuListar = new System.Windows.Forms.Button();
             this.buttonMenuCadastrar = new System.Windows.Forms.Button();
             this.panelBemVindo = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.labelBemVindo = new System.Windows.Forms.Label();
             this.panelListaPessoas = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
+            this.labelListaPessoas = new System.Windows.Forms.Label();
             this.richTextBoxListaPessoa = new System.Windows.Forms.RichTextBox();
             this.BottomToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.TopToolStripPanel = new System.Windows.Forms.ToolStripPanel();
@@ -71,7 +71,7 @@
             this.buttonEnviaDeletar = new System.Windows.Forms.Button();
             this.textBoxDeletarCodigo = new System.Windows.Forms.TextBox();
             this.labelCodDeletar = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.labelDeletarPessoa = new System.Windows.Forms.Label();
             this.panelAtualiza = new System.Windows.Forms.Panel();
             this.panelVerdadeAtualiza = new System.Windows.Forms.Panel();
             this.buttonAtualizaCancela = new System.Windows.Forms.Button();
@@ -82,7 +82,7 @@
             this.radioButtonAtualizaSexoM = new System.Windows.Forms.RadioButton();
             this.textBoxAtualizaNome = new System.Windows.Forms.TextBox();
             this.textBoxAtualizaSobrenome = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.labelCadastraNascimento = new System.Windows.Forms.Label();
             this.dateTimePickerAtualiza = new System.Windows.Forms.DateTimePicker();
             this.labelSobrenomeAtualiza = new System.Windows.Forms.Label();
             this.labelNomeAtualiza = new System.Windows.Forms.Label();
@@ -156,18 +156,18 @@
             // panelCadastrar
             // 
             this.panelCadastrar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelCadastrar.Controls.Add(this.label5);
+            this.panelCadastrar.Controls.Add(this.labelCadastrar);
             this.panelCadastrar.Controls.Add(this.dateTimePickerCadastro);
             this.panelCadastrar.Controls.Add(this.buttonLimpaCadastro);
-            this.panelCadastrar.Controls.Add(this.label4);
+            this.panelCadastrar.Controls.Add(this.labelAtualizaNascimento);
             this.panelCadastrar.Controls.Add(this.buttonEnviaCadastro);
             this.panelCadastrar.Controls.Add(this.radioButtonSexoN);
             this.panelCadastrar.Controls.Add(this.radioButtonSexoF);
-            this.panelCadastrar.Controls.Add(this.label1);
+            this.panelCadastrar.Controls.Add(this.labelCadastraNome);
             this.panelCadastrar.Controls.Add(this.radioButtonSexoM);
             this.panelCadastrar.Controls.Add(this.textBoxNomeCadastro);
-            this.panelCadastrar.Controls.Add(this.label3);
-            this.panelCadastrar.Controls.Add(this.label2);
+            this.panelCadastrar.Controls.Add(this.labelCadastraSexo);
+            this.panelCadastrar.Controls.Add(this.labelCadastraSobrenome);
             this.panelCadastrar.Controls.Add(this.textBoxSobrenomeCadastro);
             this.panelCadastrar.Location = new System.Drawing.Point(141, 40);
             this.panelCadastrar.Name = "panelCadastrar";
@@ -175,15 +175,15 @@
             this.panelCadastrar.TabIndex = 2;
             this.panelCadastrar.Visible = false;
             // 
-            // label5
+            // labelCadastrar
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(116, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(170, 39);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Cadastrar";
+            this.labelCadastrar.AutoSize = true;
+            this.labelCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCadastrar.Location = new System.Drawing.Point(116, 0);
+            this.labelCadastrar.Name = "labelCadastrar";
+            this.labelCadastrar.Size = new System.Drawing.Size(170, 39);
+            this.labelCadastrar.TabIndex = 11;
+            this.labelCadastrar.Text = "Cadastrar";
             // 
             // dateTimePickerCadastro
             // 
@@ -195,6 +195,7 @@
             this.dateTimePickerCadastro.Size = new System.Drawing.Size(102, 20);
             this.dateTimePickerCadastro.TabIndex = 5;
             this.dateTimePickerCadastro.Value = new System.DateTime(2017, 3, 11, 0, 0, 0, 0);
+            this.dateTimePickerCadastro.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dateTimePickerCadastro_KeyDown);
             // 
             // buttonLimpaCadastro
             // 
@@ -206,14 +207,14 @@
             this.buttonLimpaCadastro.UseVisualStyleBackColor = true;
             this.buttonLimpaCadastro.Click += new System.EventHandler(this.buttonLimpaCadastro_Click);
             // 
-            // label4
+            // labelAtualizaNascimento
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(43, 176);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 13);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Nascimento:";
+            this.labelAtualizaNascimento.AutoSize = true;
+            this.labelAtualizaNascimento.Location = new System.Drawing.Point(43, 176);
+            this.labelAtualizaNascimento.Name = "labelAtualizaNascimento";
+            this.labelAtualizaNascimento.Size = new System.Drawing.Size(66, 13);
+            this.labelAtualizaNascimento.TabIndex = 9;
+            this.labelAtualizaNascimento.Text = "Nascimento:";
             // 
             // buttonEnviaCadastro
             // 
@@ -234,6 +235,7 @@
             this.radioButtonSexoN.TabIndex = 4;
             this.radioButtonSexoN.Text = "Não especificado";
             this.radioButtonSexoN.UseVisualStyleBackColor = true;
+            this.radioButtonSexoN.KeyDown += new System.Windows.Forms.KeyEventHandler(this.radioButtonSexoN_KeyDown);
             // 
             // radioButtonSexoF
             // 
@@ -244,15 +246,16 @@
             this.radioButtonSexoF.TabIndex = 3;
             this.radioButtonSexoF.Text = "Feminino";
             this.radioButtonSexoF.UseVisualStyleBackColor = true;
+            this.radioButtonSexoF.KeyDown += new System.Windows.Forms.KeyEventHandler(this.radioButtonSexoF_KeyDown);
             // 
-            // label1
+            // labelCadastraNome
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(43, 98);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nome:";
+            this.labelCadastraNome.AutoSize = true;
+            this.labelCadastraNome.Location = new System.Drawing.Point(43, 98);
+            this.labelCadastraNome.Name = "labelCadastraNome";
+            this.labelCadastraNome.Size = new System.Drawing.Size(38, 13);
+            this.labelCadastraNome.TabIndex = 0;
+            this.labelCadastraNome.Text = "Nome:";
             // 
             // radioButtonSexoM
             // 
@@ -265,6 +268,7 @@
             this.radioButtonSexoM.TabStop = true;
             this.radioButtonSexoM.Text = "Masculino";
             this.radioButtonSexoM.UseVisualStyleBackColor = true;
+            this.radioButtonSexoM.KeyDown += new System.Windows.Forms.KeyEventHandler(this.radioButtonSexoM_KeyDown);
             // 
             // textBoxNomeCadastro
             // 
@@ -273,24 +277,25 @@
             this.textBoxNomeCadastro.Name = "textBoxNomeCadastro";
             this.textBoxNomeCadastro.Size = new System.Drawing.Size(100, 20);
             this.textBoxNomeCadastro.TabIndex = 0;
+            this.textBoxNomeCadastro.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxNomeCadastro_KeyDown);
             // 
-            // label3
+            // labelCadastraSexo
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(43, 140);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Sexo:";
+            this.labelCadastraSexo.AutoSize = true;
+            this.labelCadastraSexo.Location = new System.Drawing.Point(43, 140);
+            this.labelCadastraSexo.Name = "labelCadastraSexo";
+            this.labelCadastraSexo.Size = new System.Drawing.Size(34, 13);
+            this.labelCadastraSexo.TabIndex = 5;
+            this.labelCadastraSexo.Text = "Sexo:";
             // 
-            // label2
+            // labelCadastraSobrenome
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(208, 98);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Sobrenome:";
+            this.labelCadastraSobrenome.AutoSize = true;
+            this.labelCadastraSobrenome.Location = new System.Drawing.Point(208, 98);
+            this.labelCadastraSobrenome.Name = "labelCadastraSobrenome";
+            this.labelCadastraSobrenome.Size = new System.Drawing.Size(64, 13);
+            this.labelCadastraSobrenome.TabIndex = 3;
+            this.labelCadastraSobrenome.Text = "Sobrenome:";
             // 
             // textBoxSobrenomeCadastro
             // 
@@ -299,6 +304,7 @@
             this.textBoxSobrenomeCadastro.Name = "textBoxSobrenomeCadastro";
             this.textBoxSobrenomeCadastro.Size = new System.Drawing.Size(100, 20);
             this.textBoxSobrenomeCadastro.TabIndex = 1;
+            this.textBoxSobrenomeCadastro.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxSobrenomeCadastro_KeyDown);
             // 
             // panelMenuGeral
             // 
@@ -306,7 +312,7 @@
             this.panelMenuGeral.Controls.Add(this.buttonMenuConsultar);
             this.panelMenuGeral.Controls.Add(this.buttonMenuAtualizar);
             this.panelMenuGeral.Controls.Add(this.buttonMenuDeletar);
-            this.panelMenuGeral.Controls.Add(this.label6);
+            this.panelMenuGeral.Controls.Add(this.labelMenu);
             this.panelMenuGeral.Controls.Add(this.buttonMenuListar);
             this.panelMenuGeral.Controls.Add(this.buttonMenuCadastrar);
             this.panelMenuGeral.Location = new System.Drawing.Point(12, 40);
@@ -344,15 +350,15 @@
             this.buttonMenuDeletar.UseVisualStyleBackColor = true;
             this.buttonMenuDeletar.Click += new System.EventHandler(this.buttonMenuDeletar_Click);
             // 
-            // label6
+            // labelMenu
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(18, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 24);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Menu";
+            this.labelMenu.AutoSize = true;
+            this.labelMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMenu.Location = new System.Drawing.Point(18, 0);
+            this.labelMenu.Name = "labelMenu";
+            this.labelMenu.Size = new System.Drawing.Size(59, 24);
+            this.labelMenu.TabIndex = 2;
+            this.labelMenu.Text = "Menu";
             // 
             // buttonMenuListar
             // 
@@ -377,26 +383,26 @@
             // panelBemVindo
             // 
             this.panelBemVindo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelBemVindo.Controls.Add(this.label7);
+            this.panelBemVindo.Controls.Add(this.labelBemVindo);
             this.panelBemVindo.Location = new System.Drawing.Point(141, 40);
             this.panelBemVindo.Name = "panelBemVindo";
             this.panelBemVindo.Size = new System.Drawing.Size(389, 267);
             this.panelBemVindo.TabIndex = 12;
             // 
-            // label7
+            // labelBemVindo
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(88, 98);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(235, 42);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "BEM VINDO";
+            this.labelBemVindo.AutoSize = true;
+            this.labelBemVindo.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBemVindo.Location = new System.Drawing.Point(88, 98);
+            this.labelBemVindo.Name = "labelBemVindo";
+            this.labelBemVindo.Size = new System.Drawing.Size(235, 42);
+            this.labelBemVindo.TabIndex = 0;
+            this.labelBemVindo.Text = "BEM VINDO";
             // 
             // panelListaPessoas
             // 
             this.panelListaPessoas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelListaPessoas.Controls.Add(this.label8);
+            this.panelListaPessoas.Controls.Add(this.labelListaPessoas);
             this.panelListaPessoas.Controls.Add(this.richTextBoxListaPessoa);
             this.panelListaPessoas.Location = new System.Drawing.Point(141, 40);
             this.panelListaPessoas.Name = "panelListaPessoas";
@@ -404,15 +410,15 @@
             this.panelListaPessoas.TabIndex = 12;
             this.panelListaPessoas.Visible = false;
             // 
-            // label8
+            // labelListaPessoas
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(76, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(234, 39);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Lista Pessoas";
+            this.labelListaPessoas.AutoSize = true;
+            this.labelListaPessoas.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelListaPessoas.Location = new System.Drawing.Point(76, 0);
+            this.labelListaPessoas.Name = "labelListaPessoas";
+            this.labelListaPessoas.Size = new System.Drawing.Size(234, 39);
+            this.labelListaPessoas.TabIndex = 1;
+            this.labelListaPessoas.Text = "Lista Pessoas";
             // 
             // richTextBoxListaPessoa
             // 
@@ -485,7 +491,7 @@
             this.panelDeletarPessoa.Controls.Add(this.buttonEnviaDeletar);
             this.panelDeletarPessoa.Controls.Add(this.textBoxDeletarCodigo);
             this.panelDeletarPessoa.Controls.Add(this.labelCodDeletar);
-            this.panelDeletarPessoa.Controls.Add(this.label9);
+            this.panelDeletarPessoa.Controls.Add(this.labelDeletarPessoa);
             this.panelDeletarPessoa.Location = new System.Drawing.Point(141, 40);
             this.panelDeletarPessoa.Name = "panelDeletarPessoa";
             this.panelDeletarPessoa.Size = new System.Drawing.Size(389, 267);
@@ -519,15 +525,15 @@
             this.labelCodDeletar.TabIndex = 1;
             this.labelCodDeletar.Text = "Informe o código:";
             // 
-            // label9
+            // labelDeletarPessoa
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(69, 1);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(254, 39);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Deletar Pessoa";
+            this.labelDeletarPessoa.AutoSize = true;
+            this.labelDeletarPessoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDeletarPessoa.Location = new System.Drawing.Point(69, 1);
+            this.labelDeletarPessoa.Name = "labelDeletarPessoa";
+            this.labelDeletarPessoa.Size = new System.Drawing.Size(254, 39);
+            this.labelDeletarPessoa.TabIndex = 0;
+            this.labelDeletarPessoa.Text = "Deletar Pessoa";
             // 
             // panelAtualiza
             // 
@@ -553,7 +559,7 @@
             this.panelVerdadeAtualiza.Controls.Add(this.radioButtonAtualizaSexoM);
             this.panelVerdadeAtualiza.Controls.Add(this.textBoxAtualizaNome);
             this.panelVerdadeAtualiza.Controls.Add(this.textBoxAtualizaSobrenome);
-            this.panelVerdadeAtualiza.Controls.Add(this.label10);
+            this.panelVerdadeAtualiza.Controls.Add(this.labelCadastraNascimento);
             this.panelVerdadeAtualiza.Controls.Add(this.dateTimePickerAtualiza);
             this.panelVerdadeAtualiza.Controls.Add(this.labelSobrenomeAtualiza);
             this.panelVerdadeAtualiza.Controls.Add(this.labelNomeAtualiza);
@@ -644,19 +650,21 @@
             this.textBoxAtualizaSobrenome.TabIndex = 1;
             this.textBoxAtualizaSobrenome.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxAtualizaSobrenome_KeyDown);
             // 
-            // label10
+            // labelCadastraNascimento
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(14, 98);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(107, 13);
-            this.label10.TabIndex = 3;
-            this.label10.Text = "Data de Nascimento:";
+            this.labelCadastraNascimento.AutoSize = true;
+            this.labelCadastraNascimento.Location = new System.Drawing.Point(14, 98);
+            this.labelCadastraNascimento.Name = "labelCadastraNascimento";
+            this.labelCadastraNascimento.Size = new System.Drawing.Size(107, 13);
+            this.labelCadastraNascimento.TabIndex = 3;
+            this.labelCadastraNascimento.Text = "Data de Nascimento:";
             // 
             // dateTimePickerAtualiza
             // 
             this.dateTimePickerAtualiza.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerAtualiza.Location = new System.Drawing.Point(127, 94);
+            this.dateTimePickerAtualiza.MaxDate = new System.DateTime(2100, 12, 31, 0, 0, 0, 0);
+            this.dateTimePickerAtualiza.MinDate = new System.DateTime(1920, 1, 1, 0, 0, 0, 0);
             this.dateTimePickerAtualiza.Name = "dateTimePickerAtualiza";
             this.dateTimePickerAtualiza.Size = new System.Drawing.Size(95, 20);
             this.dateTimePickerAtualiza.TabIndex = 5;
@@ -843,24 +851,24 @@
         private System.Windows.Forms.Button buttonLimpaCadastro;
         private System.Windows.Forms.Button buttonEnviaCadastro;
         private System.Windows.Forms.TextBox textBoxSobrenomeCadastro;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelCadastraSobrenome;
         private System.Windows.Forms.TextBox textBoxNomeCadastro;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelCadastraNome;
         private System.Windows.Forms.RadioButton radioButtonSexoN;
         private System.Windows.Forms.RadioButton radioButtonSexoF;
         private System.Windows.Forms.RadioButton radioButtonSexoM;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelCadastraSexo;
+        private System.Windows.Forms.Label labelAtualizaNascimento;
         private System.Windows.Forms.DateTimePicker dateTimePickerCadastro;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelCadastrar;
         private System.Windows.Forms.Panel panelMenuGeral;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelMenu;
         private System.Windows.Forms.Button buttonMenuListar;
         private System.Windows.Forms.Button buttonMenuCadastrar;
         private System.Windows.Forms.Panel panelBemVindo;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label labelBemVindo;
         private System.Windows.Forms.Panel panelListaPessoas;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label labelListaPessoas;
         private System.Windows.Forms.RichTextBox richTextBoxListaPessoa;
         private System.Windows.Forms.ToolStripPanel BottomToolStripPanel;
         private System.Windows.Forms.ToolStripPanel TopToolStripPanel;
@@ -873,7 +881,7 @@
         private System.Windows.Forms.Button buttonEnviaDeletar;
         private System.Windows.Forms.TextBox textBoxDeletarCodigo;
         private System.Windows.Forms.Label labelCodDeletar;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label labelDeletarPessoa;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.Button buttonMenuConsultar;
         private System.Windows.Forms.Button buttonMenuAtualizar;
@@ -898,7 +906,7 @@
         private System.Windows.Forms.RadioButton radioButtonAtualizaSexoM;
         private System.Windows.Forms.TextBox textBoxAtualizaNome;
         private System.Windows.Forms.TextBox textBoxAtualizaSobrenome;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label labelCadastraNascimento;
         private System.Windows.Forms.DateTimePicker dateTimePickerAtualiza;
         private System.Windows.Forms.Label labelSobrenomeAtualiza;
         private System.Windows.Forms.Label labelNomeAtualiza;

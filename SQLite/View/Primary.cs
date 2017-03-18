@@ -68,6 +68,7 @@ namespace SQLite.View
                 Pessoa pessoa = new Pessoa(nome, sobrenome, data, sexo);
                 sqlite.sqliteInsert(pessoa);
                 toolStripStatusLabel1.Text = "Inserido com sucesso.";
+                buttonLimpaCadastro.PerformClick();
             }
             else
             {
@@ -259,9 +260,60 @@ namespace SQLite.View
 
         //cadastra
         #region cadastra
+        private void textBoxNomeCadastro_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonEnviaCadastro.PerformClick();
+                e.SuppressKeyPress = true;
+            }
+        }
 
+        private void textBoxSobrenomeCadastro_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonEnviaCadastro.PerformClick();
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void radioButtonSexoF_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonEnviaCadastro.PerformClick();
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void radioButtonSexoM_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonEnviaCadastro.PerformClick();
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void radioButtonSexoN_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonEnviaCadastro.PerformClick();
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void dateTimePickerCadastro_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonEnviaCadastro.PerformClick();
+                e.SuppressKeyPress = true;
+            }
+        }
         #endregion
-
         //deleta
         #region deleta
         private void textBoxDeletarCodigo_KeyDown(object sender, KeyEventArgs e)
