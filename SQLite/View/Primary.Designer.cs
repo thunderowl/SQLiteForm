@@ -508,6 +508,7 @@
             this.textBoxDeletarCodigo.Name = "textBoxDeletarCodigo";
             this.textBoxDeletarCodigo.Size = new System.Drawing.Size(100, 20);
             this.textBoxDeletarCodigo.TabIndex = 2;
+            this.textBoxDeletarCodigo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxDeletarCodigo_KeyDown);
             // 
             // labelCodDeletar
             // 
@@ -601,6 +602,7 @@
             this.radioButtonAtualizaSexoN.TabStop = true;
             this.radioButtonAtualizaSexoN.Text = "Não Especificado";
             this.radioButtonAtualizaSexoN.UseVisualStyleBackColor = true;
+            this.radioButtonAtualizaSexoN.KeyDown += new System.Windows.Forms.KeyEventHandler(this.radioButtonAtualizaSexoN_KeyDown);
             // 
             // radioButtonAtualizaSexoF
             // 
@@ -612,6 +614,7 @@
             this.radioButtonAtualizaSexoF.TabStop = true;
             this.radioButtonAtualizaSexoF.Text = "Feminino";
             this.radioButtonAtualizaSexoF.UseVisualStyleBackColor = true;
+            this.radioButtonAtualizaSexoF.KeyDown += new System.Windows.Forms.KeyEventHandler(this.radioButtonAtualizaSexoF_KeyDown);
             // 
             // radioButtonAtualizaSexoM
             // 
@@ -623,6 +626,7 @@
             this.radioButtonAtualizaSexoM.TabStop = true;
             this.radioButtonAtualizaSexoM.Text = "Masculino";
             this.radioButtonAtualizaSexoM.UseVisualStyleBackColor = true;
+            this.radioButtonAtualizaSexoM.KeyDown += new System.Windows.Forms.KeyEventHandler(this.radioButtonAtualizaSexoM_KeyDown);
             // 
             // textBoxAtualizaNome
             // 
@@ -630,6 +634,7 @@
             this.textBoxAtualizaNome.Name = "textBoxAtualizaNome";
             this.textBoxAtualizaNome.Size = new System.Drawing.Size(100, 20);
             this.textBoxAtualizaNome.TabIndex = 0;
+            this.textBoxAtualizaNome.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxAtualizaNome_KeyDown);
             // 
             // textBoxAtualizaSobrenome
             // 
@@ -637,6 +642,7 @@
             this.textBoxAtualizaSobrenome.Name = "textBoxAtualizaSobrenome";
             this.textBoxAtualizaSobrenome.Size = new System.Drawing.Size(100, 20);
             this.textBoxAtualizaSobrenome.TabIndex = 1;
+            this.textBoxAtualizaSobrenome.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxAtualizaSobrenome_KeyDown);
             // 
             // label10
             // 
@@ -654,6 +660,7 @@
             this.dateTimePickerAtualiza.Name = "dateTimePickerAtualiza";
             this.dateTimePickerAtualiza.Size = new System.Drawing.Size(95, 20);
             this.dateTimePickerAtualiza.TabIndex = 5;
+            this.dateTimePickerAtualiza.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dateTimePickerAtualiza_KeyDown);
             // 
             // labelSobrenomeAtualiza
             // 

@@ -8,6 +8,7 @@ namespace SQLite.View
     public partial class Primary : Form
     {
         Sqlite sqlite = new Sqlite();
+        int codigo;
 
         public Primary()
         {
@@ -115,7 +116,7 @@ namespace SQLite.View
 
         private void buttonEnviaDeletar_Click(object sender, EventArgs e)
         {
-            if (!textBoxDeletarCodigo.Text.Equals(""))
+            if (!textBoxDeletarCodigo.Text.Equals("") && !textBoxDeletarCodigo.Text.Equals(null))
             {
                 int codigo = int.Parse(textBoxDeletarCodigo.Text);
 
@@ -165,7 +166,7 @@ namespace SQLite.View
 
         private void buttonEnviarConsulta_Click(object sender, EventArgs e)
         {
-            if (!textBoxCodConsulta.Text.Equals(""))
+            if (!textBoxCodConsulta.Text.Equals("") && !textBoxCodConsulta.Text.Equals(null))
             {
                 int codigo = int.Parse(textBoxCodConsulta.Text);
 
@@ -187,10 +188,12 @@ namespace SQLite.View
             }
             
         }
-
+        
         private void buttonEnviaAtualizar_Click(object sender, EventArgs e)
         {
-            if(!textBoxCodAtualiza.Equals(""))
+            codigo = int.Parse(textBoxCodAtualiza.Text);
+
+            if (!textBoxCodAtualiza.Text.Equals("") && !textBoxCodAtualiza.Text.Equals(null))
             {
                 int codigo = int.Parse(textBoxCodAtualiza.Text);
 
@@ -236,16 +239,16 @@ namespace SQLite.View
 
             return ch;
         }
-
+        
         private void buttonAtualizaCancela_Click(object sender, EventArgs e)
         {
             textBoxCodAtualiza.Text = null;
             panelVerdadeAtualiza.Visible = false;
+            toolStripStatusLabel1.Text = "Aguardando ação do usuário...";
         }
 
         private void buttonEnviaAtualiza2_Click(object sender, EventArgs e)
         {
-            int codigo = int.Parse(textBoxCodAtualiza.Text);
             textBoxCodAtualiza.Text = null;
 
             Pessoa pessoa = new Pessoa(textBoxAtualizaNome.Text, textBoxAtualizaSobrenome.Text, dateTimePickerAtualiza.Value.Date.ToShortDateString(), radioChekedAtualiza());
@@ -254,6 +257,24 @@ namespace SQLite.View
             toolStripStatusLabel1.Text = "Atualizado com sucesso...";
         }
 
+        //cadastra
+        #region cadastra
+
+        #endregion
+
+        //deleta
+        #region deleta
+        private void textBoxDeletarCodigo_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonEnviaDeletar.PerformClick();
+                e.SuppressKeyPress = true;
+            }
+        }
+        #endregion
+        //consulta
+        #region consulta
         private void textBoxCodConsulta_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -262,6 +283,9 @@ namespace SQLite.View
                 e.SuppressKeyPress = true;
             }
         }
+        #endregion
+        //atualiza
+        #region atualiza
 
         private void textBoxCodAtualiza_KeyDown(object sender, KeyEventArgs e)
         {
@@ -271,5 +295,63 @@ namespace SQLite.View
                 e.SuppressKeyPress = true;
             }
         }
+
+        private void textBoxAtualizaNome_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonEnviaAtualiza2.PerformClick();
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void textBoxAtualizaSobrenome_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonEnviaAtualiza2.PerformClick();
+                e.SuppressKeyPress = true;
+            }
+        }
+        
+        private void radioButtonAtualizaSexoM_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonEnviaAtualiza2.PerformClick();
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void radioButtonAtualizaSexoN_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonEnviaAtualiza2.PerformClick();
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void radioButtonAtualizaSexoF_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonEnviaAtualiza2.PerformClick();
+                e.SuppressKeyPress = true;
+            }
+        }
+        
+
+        private void dateTimePickerAtualiza_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonEnviaAtualiza2.PerformClick();
+                e.SuppressKeyPress = true;
+            }
+        }
+        #endregion
+
+        //fim atualiza
     }
 }
