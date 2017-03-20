@@ -147,8 +147,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logoICO.ico" />
-    <None Include="Resources\logoICO.ico" />
-    <None Include="Resources\logo.png" />
+    <EmbeddedResource Include="Resources\logoICO.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

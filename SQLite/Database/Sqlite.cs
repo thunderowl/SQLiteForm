@@ -294,7 +294,7 @@ namespace SQLite.Database
                 {
                     con.Open();
 
-                    string sql = "UPDATE PESSOA SET NOME = '" + pessoa.Nome + "', SOBRENOME = '" + pessoa.Sobrenome + "', DATA_NASCIMENTO = '" + pessoa.DataNascimento + "', SEXO = '" + pessoa.Sexo + "';";
+                    string sql = "UPDATE PESSOA SET NOME = '" + pessoa.Nome + "', SOBRENOME = '" + pessoa.Sobrenome + "', DATA_NASCIMENTO = '" + pessoa.DataNascimento + "', SEXO = '" + pessoa.Sexo + "' WHERE CODIGO = " + codigo + ";";
 
                     using (SQLiteCommand command = new SQLiteCommand(sql, con))
                         command.ExecuteNonQuery();
